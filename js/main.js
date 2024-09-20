@@ -1,4 +1,4 @@
-// Validate Captcha and Terms & Contitions
+// Validate Captcha and Terms & Conditions
 
 let generatedCaptcha;
 
@@ -15,7 +15,7 @@ function generateCaptcha() {
 }
 
 function validateCaptcha(event) {
-    event.preventDefault();
+    event.preventDefault(); // Prevent form submission for validation
 
     const userCaptcha = document.getElementById('captchaInput').value;
     const messageElement = document.getElementById('message');
@@ -44,6 +44,9 @@ function validateTermsAndConditions() {
         messageTermsElement.style.display = 'block';
         return;
     }
+
+    // Submit the form if both CAPTCHA and Terms are valid
+    document.getElementById('captchaForm').submit();
 }
 
 // Popup Script
