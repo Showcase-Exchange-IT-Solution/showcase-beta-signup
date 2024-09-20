@@ -1,0 +1,799 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Larken-medium';
+  src: url('../fonts/larken-medium.woff') format('woff'),
+    url('../fonts/larken-medium.otf') format('otf'),
+    url('../fonts/larken-medium.ttf') format('ttf');
+}
+
+a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.title {
+  font-family: 'Larken-medium';
+}
+
+
+/*top section header*/
+.sc-tsh {
+  height: auto;
+  overflow: hidden;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.sc-tsh .cnt,
+.sc-tsh .cnt a {
+  color: #fff !important;
+}
+
+
+.btn-sc-clr {
+  border-radius: 50px !important;
+  padding: 8px 10px;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+
+.img-btn {
+  width: 22px;
+}
+
+
+.btn-sc-clr.sc-bg-grd-clr {
+  animation: gradient 50s ease infinite !important;
+
+}
+
+.btn-sc-clr.sc-bg-grd-clr:hover {
+  animation: gradient 1.5s ease infinite !important;
+}
+
+.logo {
+  height: 32px;
+}
+
+
+.sc-btn-simple {
+  color: #000;
+  padding: 8px 15px;
+  border: 1px solid #CCCCCC;
+  background-color: #fff;
+  border-radius: 50px !important;
+
+}
+
+.sc-bg-grd-clr {
+  background: linear-gradient(-45deg, #FF75EE, #FF6FC2, #FF6990, #FF6CA5);
+  background-size: 400% 400%;
+  animation: gradient 4s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/*HERO section*/
+
+
+.sc-hero h1,
+.sc-sec-s7 h2,
+.sc-hero h1 span {
+  font-family: 'Larken-medium';
+  font-size: 50px;
+}
+
+.sc-sec-s2 h2 span,
+.sc-sec-s7 h2 span,
+.sc-sec-s6 h2 span,
+.sc-hero h1 span,
+.sc-sec-sl h2 span {
+  background: linear-gradient(-45deg, #FF75EE, #FF6FC2, #FF6990, #FF6CA5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sc-hero p, 
+.sc-sec-s6 p {
+  font-weight: 500;
+}
+
+.sc-gsr {
+  margin-left: -20px !important;
+  z-index: 1;
+}
+
+
+.centro .sc-btn-simple.sc-gsr {
+  font-weight: 600 !important;
+}
+
+.wrapper {
+  height: 500px;
+  width: 500px;
+  display: block;
+  padding: 50px;
+  background-image: url(../images/bgs.jpg);
+  border-radius: 15px;
+}
+
+.sistema {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.orbita {
+  list-style: none;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+
+}
+
+.orbita.centro {
+  top: 190px;
+  left: 60px;
+  border: none;
+  text-align: center;
+  margin: 0 auto;
+  right: 0;
+}
+
+
+.st1 {
+  animation: circular 8s linear infinite;
+  position: absolute;
+}
+
+.st2 {
+  animation: circular 10s linear infinite;
+}
+
+.st3 {
+  animation: circular 12s linear infinite;
+}
+
+.st1,
+.st2,
+.st3,
+.st4,
+.st5,
+.st6,
+.st7 {
+  border: 3px solid #fff;
+  z-index: 99;
+}
+
+.st1,
+.st2,
+.st3 {
+  top: 165px !important;
+  left: 100px !important;
+  bottom: 0 !important;
+  right: 100px !important;
+  margin: 0 auto !important;
+}
+
+.st4,
+.st5,
+.st6,
+.st7 {
+  top: 140px !important;
+  left: 130px !important;
+  bottom: 0 !important;
+  right: 100px !important;
+
+}
+
+.st4 {
+  animation: circular2 5s linear infinite;
+  height: 80px !important;
+  width: 80px !important;
+}
+
+.st5 {
+  animation: circular2 7s linear infinite;
+  height: 70px !important;
+  width: 70px !important;
+}
+
+.st6 {
+  animation: circular2 14s linear infinite;
+  height: 75px !important;
+  width: 75px !important;
+}
+
+.st7 {
+  animation: circular2 16s linear infinite;
+  height: 85px !important;
+  width: 85px !important;
+}
+
+
+@keyframes circular {
+  from {
+    transform: rotate(0deg) translateX(200px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+
+
+@keyframes circular2 {
+  from {
+    transform: rotate(0deg) translateX(160px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(160px) rotate(-360deg);
+  }
+}
+
+/*.orbita{
+  animation: none;
+}*/
+
+.st1 {
+  background-image: url(../images/st1.png);
+  background-size: 100%
+}
+
+.st2 {
+  background-image: url(../images/std2.png);
+  background-size: 100%
+}
+
+.st3 {
+  background-image: url(../images/std7.png);
+  background-size: 100%
+}
+
+.st4 {
+  background-image: url(../images/std3.png);
+  background-size: 100%
+}
+
+.st5 {
+  background-image: url(../images/std5.png);
+  background-size: 100%
+}
+
+.st6 {
+  background-image: url(../images/std4.png);
+  background-size: 100%
+}
+
+.st7 {
+  background-image: url(../images/std6.png);
+  background-size: 100%
+}
+
+
+.orbita.uno {
+  height: 320px;
+  width: 320px;
+  animation-duration: 30s;
+  top: 40px;
+  left: 60px;
+}
+
+.orbita.char {
+  height: 450px;
+  width: 450px;
+  top: 150px;
+  left: 150px;
+}
+
+.orbita.tres {
+  height: 400px;
+  width: 400px;
+  animation-duration: 18s;
+}
+
+.planeta {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  border-radius: 50%;
+
+}
+
+.planeta.uno {
+  top: -20px;
+}
+
+.planeta.uno1 {
+  bottom: -20px;
+}
+
+.planeta.uno2 {
+  left: -23px;
+  top: 120px;
+}
+
+.planeta.uno3 {
+  background-color: #ccc;
+  top: 120px;
+  right: -20px;
+}
+
+.planeta.dos {
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  bottom: -22px;
+  background-color: red;
+}
+
+.planeta.tres {
+  background-color: chartreuse;
+  top: 18px;
+  left: 50px;
+
+}
+
+.planeta.char {
+  background-color: green;
+  top: 150px;
+  right: -20px;
+
+}
+
+
+.sc-hemail{
+  border-radius: 20px 0 0 20px !important;
+} 
+
+/*HERO section*/
+
+
+/*Homepage Section - 2*/
+.sc-sec-sl {
+  padding: 100px 0 50px 0;
+}
+.sc-sec-s2 h2,
+.sc-sec-s7 h2,
+.sc-sec-s6 h2,
+.sc-sec-sl h2 {
+  font-family: 'Larken-medium';
+  font-size: 40px;
+}
+.sc-sec-s6 h2 span,
+.sc-sec-s7 h2 span,
+.sc-sec-s2 h2 span,
+.sc-sec-sl h2 span {
+  font-family: 'Larken-medium';
+}
+
+.sc-sec-sl h5 {
+  font-weight: bold;
+  opacity: .4;
+}
+
+
+/*https://gsap.com/community/forums/topic/28604-creating-an-orbit-path-without-target-rotating/*/
+
+/*https://codepen.io/creativeocean/pen/mdrmZYY*/
+
+.sc-dcs p {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.sc-dcs h3 {
+  font-family: 'Larken-medium';
+  font-size: 45px;
+  margin: 0;
+}
+
+/*Homepage Section - 2*/
+
+
+/*Homepage Section - 3*/
+.sc-sec-s2{
+  padding: 50px 0;
+}
+
+.sc-bg-fnt{
+  font-size: 100px !important;
+  font-family: "Montserrat", sans-serif !important;
+  text-align: center;
+  font-weight: 900;
+  color: #FAF8FD;
+  line-height: 115% !important;
+}
+.sc-big{
+  position: relative;
+}
+.sc-big:after{
+    position: absolute;
+    content: '';
+    width: 310px;
+    height: 40px;
+/*    background-image: url(../images/img-txts.png);*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    right: -80px;
+    top: -40px;
+}
+.sc-job-card{
+  width: 330px;
+  padding: 5px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #E0E0E0;
+  margin: 10px;
+  display: inline-block;
+}
+
+.sc-job-card .sc-job-desc{
+  padding: 15px;
+  border-radius: 10px;
+}
+.sc-job-card .sc-job-desc img{
+  width: 20px;
+}
+
+.sc-job-card .sc-job-desc h4{
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.sc-job-card .sc-job-desc h6{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.sc-cdap .bd-highlight img{
+  width: 33px;
+  border-radius: 55px;
+}
+.sc-cdap .bd-highlight .sc-jbcmp span{
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+.sc-cdap .bd-highlight .sc-jbcmp{
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.sc-job-card .sc-job-desc.op1{
+  background-color: rgba(140, 82, 255, 0.3);
+}
+.sc-job-card .sc-job-desc.op2{
+  background-color: rgba(56, 182, 255, 0.3);
+}
+.sc-job-card .sc-job-desc.op3{
+  background-color: rgba(255, 145, 77, 0.3);
+}
+.sc-job-card .sc-job-desc.op4{
+  background-color: rgba(255, 102, 196, 0.28);
+}
+.sc-job-card .sc-job-desc.op5{
+  background-color: rgba(255, 231, 199, 1);
+}
+.sc-job-card .sc-job-desc.op6{
+  background-color: rgba(172, 221, 222, 1);
+}
+.sc-job-card .sc-job-desc.op7{
+  background-color: #F4C2EA;
+}
+.sc-job-card .sc-job-desc.op8{
+  background-color: #D8F9D2;
+}
+.sc-job-card .sc-job-desc.op9{
+  background-color: #FDDBF5;
+}
+.sc-job-card .sc-job-desc.op10{
+  background-color: #C4E8F4;
+}
+
+.sc-job-card .sc-job-desc.op11{
+  background-color: #CDC1D3;
+}
+.sc-job-card .sc-job-desc.op12{
+  background-color: #EDE992;
+}
+.sc-job-card .sc-job-desc.op13{
+  background-color: #F3EBE2;
+}
+.sc-job-card .sc-job-desc.op14{
+  background-color: #F7CFE1;
+}
+
+.sc-job-card .sc-job-desc.op13{
+  background-color: #F7B3A8;
+} 
+/*Homepage Section - 3*/
+
+/*Homepage Section - 6*/
+
+.sc-sec-s6{
+  padding: 100px 0;
+  background-image: url(../images/bg-fr.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.sc-sec-s6 ul{
+padding: 0;
+}
+
+.sc-sec-s6 li{
+    list-style-type: none;
+    padding: 10px 0 !important;
+    background-image: url(../images/yes-arrow.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left 2px center;
+    padding-left: 30px !important;
+}
+
+.sc-four-sec{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 250px;
+  margin-bottom: 30px;
+  box-shadow: -5px 18px 60px 0px rgba(210, 210, 234, 0.4);
+}
+
+.sc-four-sec img{
+  width: 50px;
+}
+.sc-four-sec h5{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 30px 0 10px 0;
+}
+.sc-four-sec p{
+  font-size: 14px;
+}
+
+.sc-four-sec:hover{
+    transform: scale(1.08);
+    transition:  0.5s;
+}
+
+.sc-mt100{
+  margin-top: 100px !important;
+}
+/*Homepage Section - 6*/
+
+/*Homepage Section - 6*/
+
+.sc-sec-s7{
+  padding: 100px 0;
+}
+.sc-testo img{
+      width: 350px !important;
+    height: auto;
+}
+.sc-sec-s7 .carousel {
+    height: 368px;
+    background-color: #FAFAFA;
+    color: #000;
+    border-radius: 15px;
+}
+.sc-sec-s7 p, .sc-sec-s7 h5{
+  color: #000;
+}
+
+.sc-sec-s7 .carousel-inner,
+.sc-sec-s7 .carousel-item{
+  height: 350px;
+}
+.sc-sec-s7 .carousel-caption{
+  left: 0;
+  padding: 30px;
+  width: 100%;
+  right: 0;
+  text-align: left;
+}
+.sc-sec-s7 .carousel-caption h5{
+  font-weight: bold;
+  font-size: 28px;
+}
+.sc-sec-s7 .carousel-caption p{
+  font-size: 16px;
+  line-height: 180%
+}
+
+.sc-sec-s7 .carousel-indicators {
+    position: absolute !important;
+    width: 150px;
+    margin: 0 0 0 auto !important;
+    top: 20px;
+    height: 20px;
+    text-align: right;
+}
+
+.sc-sec-s7 .carousel-indicators button{
+  background-color: #D9D9D9;
+  height: 15px;
+    width: 15px;
+    border-radius: 100px;
+}
+ 
+.sc-sec-s7 .carousel-indicators .active{
+ background-color: #FF75EE; 
+}
+
+
+.sc-social img{
+  border-radius: 100px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.5;
+}
+
+.sc-social img:hover{
+ opacity: 1 ; 
+}
+
+
+.footer *{
+font-size: 14px;
+}
+/*Homepage Section - 6*/
+
+
+/*Hidden Phone*/
+@media (max-width: 1199px) {
+
+.col-xl-5.hidden-990{
+ display: none;
+}
+
+.sc-four-sec{
+  width: 100% !important;
+}
+
+.sc-hide-photo{
+  display: none;
+}
+
+}
+
+@media (max-width: 990px) {
+
+
+
+.hidden-990{
+  display: none;
+}
+
+.sc-big:after{
+  content: none;
+}
+
+}
+
+/*Hidden Phone*/
+
+/* Captcha Start */
+.captcha-box {
+  font-size: larger;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 5px;
+  background-color: #ffffff;
+  border: 2px solid #e675b7;
+  border-radius: 5px;
+  padding: 0px 10px;
+  display: inline-block;
+  cursor: default;
+  user-select: none;
+}
+
+.captcha-input {
+  font-size: 16px;
+}
+
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
+}
+
+.captcha-referesh-btn:hover {
+color: #e675b7;
+}
+/* Capcha End */
+
+/* Terms and Conditions Start */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+}
+
+.popup-card {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1050; 
+  height: 80vh;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+@media (min-width: 1200px) {
+  .popup-card {
+     width: 50vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .popup-card {
+     width: 70vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .popup-card {
+     width: 80vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .popup-card {
+     width: 90vw;
+  }
+}
+
+.iframe-pdf {
+  height: 100%;
+  width: 100%;
+}
+
+.termsLink {
+  color: #e675b7 !important;
+}
+/* Terms and Conditions End */
